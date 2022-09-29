@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+    body{
+        font-size: 1.2rem;
+        min-height: 100%;
+        background-color:black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .gridcontainer{
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+             "nav"
+             "header"
+             "main"
+             "footer" ;
+             .gridcontainer > *{
+                border: 4px;
+                padding: 10px;
+                text-align: center;
+                box-shadow: -1px 1px 7px 0px white;
+               }
+               .barratumate{
+                background-color: green !important;
+                color: green;
+               }
+         }
+    }
+    .footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
